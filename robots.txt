@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sellnexx.com/sitemap.xml
