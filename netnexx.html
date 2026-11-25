@@ -1,0 +1,1584 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-T6SZ4M2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GTM-T6SZ4M2H');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Primary SEO Meta Tags -->
+<title>NetNexx by SellNexx | Multi-Vendor Network Monitoring Software, Topology &amp; Alerting NMS</title>
+<meta name="title" content="NetNexx by SellNexx | Multi-Vendor Network Monitoring Software, Topology &amp; Alerting NMS">
+<meta name="description" content="NetNexx by SellNexx is an enterprise network monitoring software (NMS) providing unified multi-vendor telemetry, automated topology discovery, proactive NOC alerting, and root-cause diagnostics.">
+<meta name="keywords" content="NetNexx, network monitoring software, multi-vendor NMS, NOC topology &amp; alerting, network management software, automated network discovery, IT infrastructure monitoring, SellNexx">
+<meta name="author" content="SellNexx">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sellnexx.com/netnexx">
+
+<!-- Favicon / Icons -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 26'><path d='M13.637 0L6.387 10.935H.038L7.288 0h6.35z' fill='%231A73E8'/><path d='M13.545 25.632H7.195L0 14.58h6.35l7.195 11.052z' fill='%23FBBC04'/><path d='M14.58 0L21.83 10.935h6.35L20.93 0h-6.35z' fill='%23EA4335'/><path d='M14.672 25.632h6.35l7.195-11.052h-6.35l-7.195 11.052z' fill='%2334A853'/></svg>">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sellnexx.com/netnexx">
+<meta property="og:site_name" content="SellNexx">
+<meta property="og:title" content="NetNexx | Multi-Vendor Network Monitoring Software &amp; NOC Topology NMS">
+<meta property="og:description" content="Unified multi-vendor network monitoring software with automated discovery, live NOC telemetry, dynamic topology mapping, and threshold alerting.">
+<meta property="og:image" content="https://sellnexx.com/netnexx_assets/netnexx-dashboard.png">
+<meta property="og:image:alt" content="NetNexx Multi-Vendor Network Monitoring Software Overview Dashboard">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://sellnexx.com/netnexx">
+<meta name="twitter:title" content="NetNexx | Multi-Vendor Network Monitoring Software &amp; NOC Topology NMS">
+<meta name="twitter:description" content="Centralized multi-vendor network monitoring software, automated NOC topology maps, and real-time threshold alerting.">
+<meta name="twitter:image" content="https://sellnexx.com/netnexx_assets/netnexx-dashboard.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured Data (JSON-LD Schema) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "NetNexx",
+      "applicationCategory": "NetworkManagementApplication",
+      "operatingSystem": "All, Cloud SaaS, Linux On-Premise, Hybrid",
+      "description": "Enterprise multi-vendor network monitoring software (NMS) providing automated network discovery, live telemetry, interactive NOC topology mapping, and proactive threshold alerting.",
+      "url": "https://sellnexx.com/netnexx",
+      "offers": {
+        "@type": "Offer",
+        "price": "Contact for Pricing",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SellNexx",
+        "url": "https://sellnexx.com",
+        "logo": "https://sellnexx.com/assets/sellnexx_logo.svg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sellnexx.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "NetNexx",
+          "item": "https://sellnexx.com/netnexx"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ==========================================================================
+   NETNEXX LIGHT ENTERPRISE DESIGN SYSTEM (Cisco Meraki / Datadog Standard)
+   ========================================================================== */
+:root {
+  --font-main: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --bg-page: #ffffff;
+  --bg-surface: #f8fafc;
+  --bg-subtle: #f1f5f9;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  
+  --border-light: #e2e8f0;
+  --border-subtle: #f1f5f9;
+  
+  --cobalt-primary: #0284c7;
+  --cobalt-hover: #0369a1;
+  --cobalt-light: #f0f9ff;
+  --cobalt-border: #bae6fd;
+  
+  --status-green: #10b981;
+  
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+  --shadow-browser: 0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+img, svg { display: block; max-width: 100%; }
+
+.container {
+  width: min(1280px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+/* Clean Light Navbar */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.header-inner {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.brand-svg {
+  width: 156px;
+  height: 26px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-subtle);
+}
+
+.nav-dropdown { position: relative; }
+.nav-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cobalt-primary);
+  background: var(--cobalt-light);
+  border-radius: var(--radius-sm);
+}
+
+.mega-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 380px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  padding: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.2s ease;
+  z-index: 120;
+}
+
+.nav-dropdown:hover .mega-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s ease;
+}
+
+.dropdown-item:hover { background-color: var(--bg-surface); }
+
+.dropdown-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.icon-box-netnexx { background: var(--cobalt-light); color: var(--cobalt-primary); }
+.icon-box-guardnexx { background: #ecfdf5; color: #059669; }
+.icon-box-portal { background: #eff6ff; color: #1a73e8; }
+
+.dropdown-item-title { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 2px; }
+.dropdown-item-desc { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
+
+.btn-cobalt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--cobalt-primary);
+  border-radius: var(--radius-full);
+  box-shadow: 0 1px 2px rgba(2, 132, 199, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-cobalt:hover {
+  background: var(--cobalt-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--bg-surface);
+  border-color: #cbd5e1;
+  transform: translateY(-1px);
+}
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  padding: 4px 2px;
+}
+.mobile-toggle span { display: block; width: 100%; height: 2px; background: var(--text-primary); }
+
+/* ==========================================================================
+   HERO SECTION (Clean Light-Mode 2-Column Split)
+   ========================================================================== */
+.noc-hero-section {
+  padding: 80px 0 100px;
+  position: relative;
+  background: radial-gradient(100% 60% at 50% 0%, #f0f9ff 0%, #ffffff 80%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.noc-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1.15fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.noc-hero-left {
+  max-width: 580px;
+}
+
+.noc-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #ffffff;
+  border: 1px solid var(--cobalt-border);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cobalt-primary);
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.08);
+  margin-bottom: 24px;
+}
+
+.pulse-dot-green {
+  width: 8px;
+  height: 8px;
+  background: var(--status-green);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+  animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.brand-hero-logo {
+  height: 32px;
+  width: auto;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.noc-hero-title {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.noc-hero-title .cobalt-text {
+  color: var(--cobalt-primary);
+}
+
+.noc-hero-desc {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 560px;
+  margin-bottom: 32px;
+}
+
+.noc-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.noc-sla-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+}
+
+.sla-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.sla-lbl {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Real Screenshot in Light Browser Frame */
+.browser-window-frame {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-browser);
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.browser-window-frame:hover {
+  transform: translateY(-2px);
+}
+
+.browser-titlebar {
+  height: 42px;
+  background: #f8fafc;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.browser-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #27c93f; }
+
+.browser-address-bar {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  padding: 3px 12px;
+  border-radius: var(--radius-full);
+}
+
+.browser-content-img {
+  cursor: zoom-in;
+  position: relative;
+  background: #f8fafc;
+}
+
+.browser-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.browser-caption-bar {
+  padding: 12px 18px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-light);
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
+   INTERACTIVE FEATURE & UI EXPLORER (Tabbed Lightbox Showcase)
+   ========================================================================== */
+.gallery-section {
+  padding: 112px 0;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 680px;
+  margin-inline: auto;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cobalt-primary);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.gallery-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.gallery-tab-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.gallery-tab-btn:hover {
+  color: var(--text-primary);
+  border-color: #cbd5e1;
+}
+
+.gallery-tab-btn.active {
+  background: var(--cobalt-primary);
+  color: #ffffff;
+  border-color: var(--cobalt-primary);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.gallery-display-wrap {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.gallery-panel {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.gallery-panel.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gallery-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-browser);
+}
+
+.gallery-caption-box {
+  padding: 24px 32px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gallery-caption-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.gallery-caption-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   SUPPORTED PROTOCOLS & MULTI-VENDOR MATRIX (Crisp Light Grid)
+   ========================================================================== */
+.matrix-section {
+  padding: 112px 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.matrix-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+}
+
+.matrix-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.matrix-card-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.badge-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.vendor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.protocol-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--cobalt-light);
+  border: 1px solid var(--cobalt-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cobalt-primary);
+}
+
+/* ==========================================================================
+   TECHNICAL ARCHITECTURE SPECIFICATIONS
+   ========================================================================== */
+.specs-section {
+  padding: 112px 0;
+  background: var(--bg-surface);
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.spec-box {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease;
+}
+
+.spec-box:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+}
+
+.spec-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--cobalt-light);
+  color: var(--cobalt-primary);
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
+
+.spec-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.spec-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Bottom CTA & Footer */
+.netnexx-cta-section {
+  padding: 96px 0;
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Enterprise Dark Footer */
+.site-footer {
+  background: #0B1120;
+  color: #94a3b8;
+  padding: 72px 0 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 56px;
+}
+
+.footer-brand-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 16px;
+  max-width: 320px;
+  color: #64748b;
+}
+
+.footer-heading {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f8fafc;
+  margin-bottom: 18px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  font-size: 13px;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #64748b;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed; inset: 0; z-index: 1200; background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px); display: none; place-items: center; padding: 24px;
+}
+.lightbox-modal.open { display: grid; }
+.lightbox-img { max-width: 90vw; max-height: 85vh; border-radius: var(--radius-md); box-shadow: 0 25px 50px rgba(0,0,0,0.5); }
+.lightbox-close { position: absolute; top: 24px; right: 24px; color: #fff; font-size: 32px; background: none; }
+
+/* Demo Modal */
+.demo-modal-backdrop {
+  position: fixed; inset: 0; z-index: 1000; background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px); display: none; place-items: center; padding: 24px; overflow-y: auto;
+}
+.demo-modal-backdrop.open { display: grid; }
+.demo-modal-container {
+  background: #ffffff; border-radius: var(--radius-lg); width: min(540px, 100%);
+  padding: 36px; position: relative; color: var(--text-primary); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.demo-modal-close {
+  position: absolute; top: 18px; right: 18px; width: 32px; height: 32px;
+  border-radius: 50%; display: grid; place-items: center; font-size: 20px;
+  color: var(--text-muted); background: var(--bg-surface);
+}
+.demo-modal-badge {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 11px;
+  font-weight: 700; text-transform: uppercase; color: var(--cobalt-primary);
+  background: var(--cobalt-light); padding: 4px 10px; border-radius: var(--radius-full); margin-bottom: 12px;
+}
+.demo-badge-dot { width: 6px; height: 6px; background: var(--cobalt-primary); border-radius: 50%; }
+.demo-modal-header h2 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+.demo-modal-header p { font-size: 14px; color: var(--text-secondary); margin-bottom: 24px; }
+.demo-modal-form { display: flex; flex-direction: column; gap: 18px; }
+.demo-form-group { display: flex; flex-direction: column; gap: 6px; }
+.demo-form-group label { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+.demo-form-group label .req { color: #ea4335; }
+.demo-form-group label .opt { font-weight: 400; color: var(--text-muted); font-size: 12px; }
+.demo-form-group input, .demo-form-group textarea {
+  width: 100%; padding: 10px 14px; font-family: inherit; font-size: 14px;
+  border: 1px solid var(--border-light); border-radius: var(--radius-sm);
+}
+.demo-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.demo-pills { display: flex; gap: 8px; }
+.demo-pill-label input[type="radio"] { display: none; }
+.demo-pill {
+  display: inline-block; padding: 8px 14px; font-size: 13px; font-weight: 600;
+  border: 1px solid var(--border-light); border-radius: var(--radius-full);
+  color: var(--text-secondary); background: var(--bg-surface);
+}
+.demo-pill-label input[type="radio"]:checked + .demo-pill {
+  background: var(--cobalt-primary); color: #ffffff; border-color: var(--cobalt-primary);
+}
+.demo-form-error { padding: 10px 14px; background: #fef2f2; border: 1px solid #fecaca; color: #dc2626; font-size: 13px; border-radius: 6px; }
+.demo-submit-btn {
+  height: 44px; display: inline-flex; align-items: center; justify-content: center;
+  gap: 8px; padding: 0 24px; font-size: 15px; font-weight: 600; color: #ffffff;
+  background: var(--cobalt-primary); border-radius: var(--radius-sm);
+}
+.btn-spinner {
+  width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff; border-radius: 50%; animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.demo-success-view { text-align: center; padding: 24px 0 12px; }
+.demo-success-icon {
+  width: 56px; height: 56px; background: #f0fdf4; color: #16a34a;
+  border: 2px solid #bbf7d0; border-radius: 50%; font-size: 28px;
+  display: grid; place-items: center; margin: 0 auto 18px;
+}
+.demo-success-btn { padding: 10px 28px; background: var(--text-primary); color: #fff; border-radius: 6px; font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .noc-hero-grid { grid-template-columns: 1fr; }
+  .matrix-grid { grid-template-columns: 1fr; }
+  .specs-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .main-nav { display: none; }
+  .mobile-toggle { display: flex; }
+  .demo-form-row { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- Clean Light Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand-link" aria-label="SellNexx Home">
+      <svg class="brand-svg" viewBox="0 0 161 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SellNexx logo">
+  <path d="M123.178 17.5453C123.178 18.1127 123.14 18.6234 123.064 19.0773H111.574C111.668 20.2122 112.065 21.1012 112.765 21.7443C113.465 22.3874 114.326 22.7089 115.347 22.7089C116.822 22.7089 117.872 22.0753 118.496 20.808H122.78C122.327 22.3212 121.456 23.5695 120.17 24.5531C118.884 25.5177 117.305 26 115.432 26C113.919 26 112.557 25.669 111.347 25.007C110.155 24.3261 109.219 23.3709 108.538 22.1415C107.876 20.912 107.545 19.4934 107.545 17.8857C107.545 16.2591 107.876 14.831 108.538 13.6016C109.2 12.3722 110.127 11.4264 111.318 10.7644C112.51 10.1024 113.881 9.77142 115.432 9.77142C116.926 9.77142 118.26 10.093 119.433 10.7361C120.624 11.3792 121.542 12.2965 122.185 13.4881C122.847 14.6608 123.178 16.0132 123.178 17.5453ZM119.064 16.4104C119.045 15.389 118.676 14.5757 117.957 13.9704C117.239 13.3463 116.359 13.0342 115.319 13.0342C114.335 13.0342 113.503 13.3368 112.822 13.9421C112.16 14.5284 111.753 15.3512 111.602 16.4104H119.064Z" fill="currentColor"/>
+  <path d="M104.641 25.7447H100.669L91.6752 12.1546V25.7447H87.7031V5.91287H91.6752L100.669 19.5313V5.91287H104.641V25.7447Z" fill="currentColor"/>
+  <path d="M83.7787 4.74963V25.7447H79.8066V4.74963H83.7787Z" fill="currentColor"/>
+  <path d="M75.8822 4.74963V25.7447H71.9102V4.74963H75.8822Z" fill="currentColor"/>
+  <path d="M69.0112 17.5453C69.0112 18.1127 68.9734 18.6234 68.8977 19.0773H57.4072C57.5018 20.2122 57.899 21.1012 58.5988 21.7443C59.2986 22.3874 60.1592 22.7089 61.1806 22.7089C62.6559 22.7089 63.7057 22.0753 64.3299 20.808H68.614C68.16 22.3212 67.29 23.5695 66.0038 24.5531C64.7176 25.5177 63.1383 26 61.2657 26C59.7526 26 58.3907 25.669 57.1802 25.007C55.9886 24.3261 55.0523 23.3709 54.3714 22.1415C53.7094 20.912 53.3784 19.4934 53.3784 17.8857C53.3784 16.2591 53.7094 14.831 54.3714 13.6016C55.0334 12.3722 55.9602 11.4264 57.1518 10.7644C58.3435 10.1024 59.7148 9.77142 61.2657 9.77142C62.76 9.77142 64.0934 10.093 65.2661 10.7361C66.4577 11.3792 67.3751 12.2965 68.0182 13.4881C68.6802 14.6608 69.0112 16.0132 69.0112 17.5453ZM64.8973 16.4104C64.8784 15.389 64.5096 14.5757 63.7908 13.9704C63.0721 13.3463 62.1925 13.0342 61.1522 13.0342C60.1687 13.0342 59.3365 13.3368 58.6555 13.9421C57.9935 14.5284 57.5869 15.3512 57.4356 16.4104H64.8973Z" fill="currentColor"/>
+  <path d="M43.9484 25.9433C42.5676 25.9433 41.3192 25.7069 40.2033 25.234C39.1063 24.7611 38.2362 24.0802 37.5931 23.1912C36.95 22.3023 36.619 21.2525 36.6001 20.042H40.8558C40.9126 20.8553 41.1963 21.4984 41.707 21.9713C42.2366 22.4441 42.9553 22.6806 43.8632 22.6806C44.79 22.6806 45.5183 22.463 46.0479 22.028C46.5775 21.5741 46.8423 20.9877 46.8423 20.269C46.8423 19.6826 46.6626 19.2003 46.3032 18.822C45.9438 18.4437 45.4899 18.1505 44.9414 17.9425C44.4118 17.7155 43.6741 17.4696 42.7284 17.2048C41.4422 16.8265 40.3924 16.4577 39.5791 16.0983C38.7847 15.72 38.0943 15.1621 37.508 14.4244C36.9406 13.6678 36.6568 12.6654 36.6568 11.417C36.6568 10.2443 36.95 9.22293 37.5364 8.35287C38.1227 7.4828 38.9455 6.8208 40.0047 6.36685C41.0639 5.89399 42.2744 5.65756 43.6363 5.65756C45.679 5.65756 47.334 6.15879 48.6013 7.16126C49.8875 8.14481 50.5968 9.52556 50.7292 11.3035H46.3599C46.3221 10.6226 46.0289 10.0646 45.4804 9.62959C44.9508 9.17565 44.2415 8.94867 43.3525 8.94867C42.5771 8.94867 41.9529 9.14727 41.48 9.54448C41.0261 9.94168 40.7991 10.5186 40.7991 11.2751C40.7991 11.8048 40.9693 12.2492 41.3098 12.6086C41.6692 12.9491 42.1042 13.2328 42.6149 13.4598C43.1445 13.6678 43.8822 13.9137 44.8279 14.1974C46.1141 14.5757 47.1638 14.954 47.9771 15.3323C48.7904 15.7106 49.4903 16.278 50.0766 17.0346C50.663 17.7912 50.9562 18.7842 50.9562 20.0136C50.9562 21.0728 50.6819 22.0564 50.1334 22.9643C49.5849 23.8722 48.781 24.6004 47.7218 25.1489C46.6626 25.6785 45.4048 25.9433 43.9484 25.9433Z" fill="currentColor"/>
+  <path d="M128.222 10.0581L133.414 17.8886L128.279 25.7759H124.385L129.521 17.8886L124.329 10.0581H128.222Z" fill="currentColor"/>
+  <path d="M156.142 10.0581L150.95 17.8886L156.085 25.7759H159.978L154.843 17.8886L160.035 10.0581H156.142Z" fill="currentColor"/>
+  <path d="M141.893 10.0581L137.447 16.7634H133.553L137.999 10.0581H141.893Z" fill="#1A73E8"/>
+  <path d="M141.836 25.7759H137.943L133.53 18.9985H137.424L141.836 25.7759Z" fill="#FBBC04"/>
+  <path d="M142.471 10.0581L146.917 16.7634H150.81L146.364 10.0581H142.471Z" fill="#EA4335"/>
+  <path d="M142.528 25.7759H146.421L150.833 18.9985H146.94L142.528 25.7759Z" fill="#34A853"/>
+  <path d="M13.637 0L6.38682 10.9347H0.0375977L7.28781 0H13.637Z" fill="#1A73E8"/>
+  <path d="M13.5447 25.6318H7.19549L0 14.5796H6.34922L13.5447 25.6318Z" fill="#FBBC04"/>
+  <path d="M14.5798 0L21.83 10.9347H28.1792L20.929 0H14.5798Z" fill="#EA4335"/>
+  <path d="M14.6721 25.6318H21.0213L28.2168 14.5796H21.8676L14.6721 25.6318Z" fill="#34A853"/>
+</svg>
+    </a>
+
+    <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-btn">
+          <span>NetNexx NOC</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <div class="mega-dropdown-menu">
+          <a href="index.html" class="dropdown-item">
+            <div class="dropdown-icon-box icon-box-portal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <div>
+              <div class="dropdown-item-title">SellNexx portal</div>
+              <div class="dropdown-item-desc">Enterprise operations hub &amp; architecture</div>
+            </div>
+          </a>
+          <a href="guardnexx.html" class="dropdown-item">
+            <div class="dropdown-icon-box icon-box-guardnexx">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="dropdown-item-title">GuardNexx</div>
+              <div class="dropdown-item-desc">Autonomous cyber-defense &amp; DPDP compliance</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="#gallery" class="nav-link">NOC explorer</a>
+      <a href="#vendors" class="nav-link">Multi-vendor matrix</a>
+      <a href="#specs" class="nav-link">Architecture</a>
+    </nav>
+
+    <div style="display:flex; gap:12px;">
+      <a href="#book-a-demo" class="btn-cobalt" data-demo="NetNexx">
+        <span>Schedule NetNexx demo</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section (Clean Light 2-Column Split with Real Screenshot in Browser Frame) -->
+  <section class="noc-hero-section">
+    <div class="container">
+      <div class="noc-hero-grid">
+        <!-- Left Column -->
+        <div class="noc-hero-left">
+          <div class="noc-hero-badge">
+            <span class="pulse-dot-green"></span>
+            <span>Multi-vendor network monitoring &amp; NOC telemetry</span>
+          </div>
+          <div class="brand-hero-logo">
+            <svg class="brand-svg" viewBox="0 0 162 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="NetNexx logo">
+  <path d="M13.637 0L6.38682 10.9347H0.0375977L7.28781 0H13.637Z" fill="#1A73E8"/>
+  <path d="M13.5447 25.6318H7.19549L0 14.5796H6.34922L13.5447 25.6318Z" fill="#FBBC04"/>
+  <path d="M14.5798 0L21.83 10.9347H28.1792L20.929 0H14.5798Z" fill="#EA4335"/>
+  <path d="M14.6721 25.6318H21.0213L28.2168 14.5796H21.8676L14.6721 25.6318Z" fill="#34A853"/>
+  <path d="M 56.117188 25.746094 L 50.945312 25.746094 L 42.539062 11.167969 L 42.429688 11.167969 C 42.46875 12.085938 42.511719 13.003906 42.554688 13.917969 C 42.59375 14.835938 42.636719 15.753906 42.679688 16.667969 L 42.679688 25.746094 L 39.039062 25.746094 L 39.039062 6.464844 L 44.195312 6.464844 L 52.554688 20.917969 L 52.632812 20.917969 C 52.621094 20.011719 52.59375 19.121094 52.554688 18.246094 C 52.523438 17.363281 52.484375 16.476562 52.445312 15.589844 L 52.445312 6.464844 L 56.117188 6.464844 Z M 66.738281 10.730469 C 68.769531 10.730469 70.378906 11.316406 71.566406 12.480469 C 72.753906 13.636719 73.347656 15.289062 73.347656 17.433594 L 73.347656 19.371094 L 63.847656 19.371094 C 63.878906 20.507812 64.210938 21.398438 64.847656 22.042969 C 65.492188 22.691406 66.382812 23.011719 67.519531 23.011719 C 68.464844 23.011719 69.324219 22.917969 70.097656 22.730469 C 70.878906 22.542969 71.679688 22.253906 72.503906 21.855469 L 72.503906 24.964844 C 71.785156 25.320312 71.023438 25.582031 70.222656 25.746094 C 69.417969 25.921875 68.457031 26.011719 67.332031 26.011719 C 65.851562 26.011719 64.542969 25.742188 63.410156 25.199219 C 62.273438 24.648438 61.382812 23.816406 60.738281 22.699219 C 60.089844 21.585938 59.769531 20.179688 59.769531 18.480469 C 59.769531 16.753906 60.058594 15.320312 60.644531 14.183594 C 61.226562 13.039062 62.039062 12.179688 63.082031 11.605469 C 64.132812 11.023438 65.351562 10.730469 66.738281 10.730469 Z M 66.753906 13.589844 C 65.980469 13.589844 65.339844 13.847656 64.832031 14.355469 C 64.320312 14.855469 64.019531 15.636719 63.925781 16.699219 L 69.566406 16.699219 C 69.542969 15.804688 69.308594 15.066406 68.863281 14.480469 C 68.414062 13.886719 67.710938 13.589844 66.753906 13.589844 Z M 82.820312 22.808594 C 83.265625 22.808594 83.699219 22.761719 84.117188 22.667969 C 84.53125 22.574219 84.949219 22.464844 85.367188 22.339844 L 85.367188 25.339844 C 84.929688 25.519531 84.386719 25.675781 83.742188 25.808594 C 83.105469 25.941406 82.414062 26.011719 81.664062 26.011719 C 80.777344 26.011719 79.984375 25.871094 79.289062 25.589844 C 78.601562 25.300781 78.054688 24.800781 77.648438 24.089844 C 77.242188 23.371094 77.039062 22.386719 77.039062 21.136719 L 77.039062 14.027344 L 75.132812 14.027344 L 75.132812 12.324219 L 77.335938 10.980469 L 78.507812 7.871094 L 81.070312 7.871094 L 81.070312 11.011719 L 85.195312 11.011719 L 85.195312 14.027344 L 81.070312 14.027344 L 81.070312 21.136719 C 81.070312 21.691406 81.230469 22.105469 81.554688 22.386719 C 81.875 22.667969 82.296875 22.808594 82.820312 22.808594 Z M 105.742188 25.746094 L 100.570312 25.746094 L 92.164062 11.167969 L 92.054688 11.167969 C 92.09375 12.085938 92.136719 13.003906 92.179688 13.917969 C 92.21875 14.835938 92.261719 15.753906 92.304688 16.667969 L 92.304688 25.746094 L 88.664062 25.746094 L 88.664062 6.464844 L 93.820312 6.464844 L 102.179688 20.917969 L 102.257812 20.917969 C 102.246094 20.011719 102.21875 19.121094 102.179688 18.246094 C 102.148438 17.363281 102.109375 16.476562 102.070312 15.589844 L 102.070312 6.464844 L 105.742188 6.464844 Z M 116.367188 10.730469 C 118.398438 10.730469 120.007812 11.316406 121.195312 12.480469 C 122.382812 13.636719 122.976562 15.289062 122.976562 17.433594 L 122.976562 19.371094 L 113.476562 19.371094 C 113.507812 20.507812 113.839844 21.398438 114.476562 22.042969 C 115.121094 22.691406 116.011719 23.011719 117.148438 23.011719 C 118.09375 23.011719 118.953125 22.917969 119.726562 22.730469 C 120.507812 22.542969 121.308594 22.253906 122.132812 21.855469 L 122.132812 24.964844 C 121.414062 25.320312 120.652344 25.582031 119.851562 25.746094 C 119.046875 25.921875 118.085938 26.011719 116.960938 26.011719 C 115.480469 26.011719 114.171875 25.742188 113.039062 25.199219 C 111.902344 24.648438 111.011719 23.816406 110.367188 22.699219 C 109.71875 21.585938 109.398438 20.179688 109.398438 18.480469 C 109.398438 16.753906 109.6875 15.320312 110.273438 14.183594 C 110.855469 13.039062 111.667969 12.179688 112.710938 11.605469 C 113.761719 11.023438 114.980469 10.730469 116.367188 10.730469 Z M 116.382812 13.589844 C 115.609375 13.589844 114.96875 13.847656 114.460938 14.355469 C 113.949219 14.855469 113.648438 15.636719 113.554688 16.699219 L 119.195312 16.699219 C 119.171875 15.804688 118.9375 15.066406 118.492188 14.480469 C 118.042969 13.886719 117.339844 13.589844 116.382812 13.589844 Z M 124.136719 25.746094 " fill="currentColor"/>
+  <path d="M129.227 10.058 L134.419 17.889 L129.284 25.776 H125.390 L130.526 17.889 L125.334 10.058 H129.227 Z" fill="currentColor"/>
+  <path d="M157.147 10.058 L151.955 17.889 L157.090 25.776 H160.983 L155.848 17.889 L161.040 10.058 H157.147 Z" fill="currentColor"/>
+  <path d="M142.898 10.058 L138.452 16.763 H134.558 L139.004 10.058 H142.898 Z" fill="#1A73E8"/>
+  <path d="M142.841 25.776 H138.948 L134.535 18.998 H138.429 L142.841 25.776 Z" fill="#FBBC04"/>
+  <path d="M143.476 10.058 L147.922 16.763 H151.815 L147.369 10.058 H143.476 Z" fill="#EA4335"/>
+  <path d="M143.533 25.776 H147.426 L151.838 18.998 H147.945 L143.533 25.776 Z" fill="#34A853"/>
+</svg>
+          </div>
+          <h1 class="noc-hero-title">
+            Sub-second telemetry and automated L2/L3 topology <span class="cobalt-text">across multi-vendor fleets</span>
+          </h1>
+          <p class="noc-hero-desc">
+            Consolidate enterprise routers, switches, firewalls, and wireless APs across Cisco, Juniper, Fortinet, and MikroTik into a single real-time observability plane with automated neighbor discovery and SFP optic diagnostics.
+          </p>
+
+          <div class="noc-hero-actions">
+            <a href="#book-a-demo" class="btn-cobalt" data-demo="NetNexx" style="height:48px; padding:0 28px; font-size:15px;">
+              <span>Schedule live NOC demo</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#gallery" class="btn-secondary" style="height:48px; padding:0 24px; font-size:15px;">
+              <span>Inspect UI screenshots ↓</span>
+            </a>
+          </div>
+
+          <div class="noc-sla-metrics">
+            <div>
+              <div class="sla-val">&lt; 1s</div>
+              <div class="sla-lbl">Alert execution latency</div>
+            </div>
+            <div>
+              <div class="sla-val">100+</div>
+              <div class="sla-lbl">Multi-vendor MIB profiles</div>
+            </div>
+            <div>
+              <div class="sla-val">Zero-touch</div>
+              <div class="sla-lbl">Automated L2/L3 discovery</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Real NetNexx Dashboard Screenshot in Light Browser Frame -->
+        <div>
+          <div class="browser-window-frame">
+            <div class="browser-titlebar">
+              <div class="browser-dots">
+                <span class="browser-dot dot-red"></span>
+                <span class="browser-dot dot-yellow"></span>
+                <span class="browser-dot dot-green"></span>
+              </div>
+              <div class="browser-address-bar">
+                netnexx.internal / noc / core-telemetry
+              </div>
+              <div style="font-size:11px; font-weight:600; color:var(--status-green); display:flex; align-items:center; gap:5px;">
+                <span class="pulse-dot-green" style="width:6px; height:6px;"></span>
+                Live telemetry
+              </div>
+            </div>
+            <div class="browser-content-img" onclick="openLightbox('netnexx_assets/netnexx-dashboard.png')">
+              <img src="netnexx_assets/netnexx-dashboard.png" alt="NetNexx Unified NOC Command Dashboard" class="browser-img" loading="eager">
+            </div>
+            <div class="browser-caption-bar">
+              <span>NetNexx unified NOC command console with sub-second polling</span>
+              <span style="color:var(--cobalt-primary); font-weight:600; cursor:pointer;" onclick="openLightbox('netnexx_assets/netnexx-dashboard.png')">Inspect 4K View ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Feature & UI Explorer (Tabbed Lightbox Showcase) -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">Production Console Explorer</div>
+        <h2 class="section-title">Explore the NetNexx NOC interface</h2>
+        <p class="section-desc">
+          Inspect production screenshots from enterprise deployments across core routing, distribution switches, and wireless spectrum.
+        </p>
+      </div>
+
+      <!-- Feature Tabs -->
+      <div class="gallery-tabs">
+        <button class="gallery-tab-btn active" onclick="switchGalleryTab(0, this)">
+          NOC executive dashboard
+        </button>
+        <button class="gallery-tab-btn" onclick="switchGalleryTab(1, this)">
+          Dynamic topology mapping
+        </button>
+        <button class="gallery-tab-btn" onclick="switchGalleryTab(2, this)">
+          Infrastructure diagnostics
+        </button>
+        <button class="gallery-tab-btn" onclick="switchGalleryTab(3, this)">
+          RF spectrum &amp; channel plan
+        </button>
+      </div>
+
+      <div class="gallery-display-wrap">
+        <!-- Panel 0: Executive Dashboard -->
+        <div class="gallery-panel active" id="gallery-panel-0">
+          <div class="gallery-card">
+            <div class="browser-content-img" onclick="openLightbox('netnexx_assets/netnexx-dashboard.png')">
+              <img src="netnexx_assets/netnexx-dashboard.png" alt="NetNexx Real-Time NOC Executive Dashboard" class="browser-img">
+            </div>
+            <div class="gallery-caption-box">
+              <div>
+                <div class="gallery-caption-title">Executive NOC command and active incidents view</div>
+                <div class="gallery-caption-desc">Sub-second interface monitoring, MTTR timeline, bandwidth consumption, and top-talkers telemetry.</div>
+              </div>
+              <button class="btn-cobalt" style="height:38px; padding:0 18px; font-size:13px;" onclick="openLightbox('netnexx_assets/netnexx-dashboard.png')">
+                Inspect 4K View ↗
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 1: Dynamic Topology -->
+        <div class="gallery-panel" id="gallery-panel-1">
+          <div class="gallery-card">
+            <div class="browser-content-img" onclick="openLightbox('netnexx_assets/netnexx-topology.png')">
+              <img src="netnexx_assets/netnexx-topology.png" alt="NetNexx Dynamic L2/L3 Network Topology" class="browser-img">
+            </div>
+            <div class="gallery-caption-box">
+              <div>
+                <div class="gallery-caption-title">Self-discovering L2/L3 physical and logical topology mapping</div>
+                <div class="gallery-caption-desc">Automatic neighbor discovery via LLDP/CDP, STP root bridge path tracing, and live link saturation.</div>
+              </div>
+              <button class="btn-cobalt" style="height:38px; padding:0 18px; font-size:13px;" onclick="openLightbox('netnexx_assets/netnexx-topology.png')">
+                Inspect 4K View ↗
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Infrastructure Diagnostics -->
+        <div class="gallery-panel" id="gallery-panel-2">
+          <div class="gallery-card">
+            <div class="browser-content-img" onclick="openLightbox('netnexx_assets/netnexx-infrastructure.png')">
+              <img src="netnexx_assets/netnexx-infrastructure.png" alt="NetNexx Infrastructure Diagnostics and Port Optics" class="browser-img">
+            </div>
+            <div class="gallery-caption-box">
+              <div>
+                <div class="gallery-caption-title">Port optics telemetry (DOM/DDM) and device configuration diff</div>
+                <div class="gallery-caption-desc">Inspect per-port optical dBm light power levels, PoE wattage draw, duplex mismatches, and config drift.</div>
+              </div>
+              <button class="btn-cobalt" style="height:38px; padding:0 18px; font-size:13px;" onclick="openLightbox('netnexx_assets/netnexx-infrastructure.png')">
+                Inspect 4K View ↗
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Wireless & Channel Plan -->
+        <div class="gallery-panel" id="gallery-panel-3">
+          <div class="gallery-card">
+            <div class="browser-content-img" onclick="openLightbox('netnexx_assets/netnexx-channel-plan.png')">
+              <img src="netnexx_assets/netnexx-channel-plan.png" alt="NetNexx RF Spectrum and Wireless Channel Plan" class="browser-img">
+            </div>
+            <div class="gallery-caption-box">
+              <div>
+                <div class="gallery-caption-title">Enterprise RF spectrum analysis and Wi-Fi 6E channel plan</div>
+                <div class="gallery-caption-desc">2.4 GHz, 5 GHz and 6 GHz spectrum heatmap, co-channel interference detection, and client roaming logs.</div>
+              </div>
+              <button class="btn-cobalt" style="height:38px; padding:0 18px; font-size:13px;" onclick="openLightbox('netnexx_assets/netnexx-channel-plan.png')">
+                Inspect 4K View ↗
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supported Protocols & Multi-Vendor Matrix (Crisp White Grid) -->
+  <section class="matrix-section" id="vendors">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">Multi-Vendor Compatibility</div>
+        <h2 class="section-title">Universal hardware and protocol compatibility</h2>
+        <p class="section-desc">
+          Eliminate monitoring silos. NetNexx natively communicates with the hardware standards powering modern enterprise infrastructure.
+        </p>
+      </div>
+
+      <div class="matrix-grid">
+        <div class="matrix-card">
+          <h3 class="matrix-card-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--cobalt-primary)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/></svg>
+            Supported hardware vendors
+          </h3>
+          <p class="matrix-card-desc">
+            Pre-compiled MIB trees, proprietary CLI parsers, and automated hardware health profiles for global networking vendors.
+          </p>
+          <div class="badge-tag-cloud">
+            <span class="vendor-badge">Cisco Systems (Catalyst / Nexus / Meraki)</span>
+            <span class="vendor-badge">Juniper Networks (Junos OS)</span>
+            <span class="vendor-badge">Fortinet (FortiGate &amp; FortiSwitch)</span>
+            <span class="vendor-badge">MikroTik (RouterOS v6 &amp; v7)</span>
+            <span class="vendor-badge">Arista Networks (EOS)</span>
+            <span class="vendor-badge">HPE Aruba Networks</span>
+            <span class="vendor-badge">Ubiquiti UniFi &amp; EdgeMAX</span>
+            <span class="vendor-badge">Huawei Enterprise</span>
+            <span class="vendor-badge">Palo Alto Networks</span>
+          </div>
+        </div>
+
+        <div class="matrix-card">
+          <h3 class="matrix-card-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--cobalt-primary)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Telemetry and ingestion protocols
+          </h3>
+          <p class="matrix-card-desc">
+            High-throughput event collectors capable of processing millions of network metric samples per second with zero drop.
+          </p>
+          <div class="badge-tag-cloud">
+            <span class="protocol-badge">SNMP v1 / v2c / v3 (AuthPriv)</span>
+            <span class="protocol-badge">NetFlow v5 / v9</span>
+            <span class="protocol-badge">IPFIX (RFC 7011)</span>
+            <span class="protocol-badge">sFlow v5</span>
+            <span class="protocol-badge">Syslog (RFC 5424)</span>
+            <span class="protocol-badge">ICMP High-Frequency Ping</span>
+            <span class="protocol-badge">SSH / Telnet Config Backup</span>
+            <span class="protocol-badge">LLDP / CDP Topology Crawl</span>
+            <span class="protocol-badge">RESTCONF &amp; gNMI Streaming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Architecture Specifications -->
+  <section class="specs-section" id="specs">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">Engineered for Uptime</div>
+        <h2 class="section-title">Enterprise architecture and high availability</h2>
+        <p class="section-desc">
+          Scalable distributed polling workers with local timeseries caching and automated failover clustering.
+        </p>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-box">
+          <div class="spec-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4 class="spec-title">Sub-second micro-polling engine</h4>
+          <p class="spec-desc">Granular sub-second polling for critical uplink interfaces and VIP gateways. Detects micro-burst congestion and route flapping before user sessions drop.</p>
+        </div>
+
+        <div class="spec-box">
+          <div class="spec-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 class="spec-title">Automated config drift diffing</h4>
+          <p class="spec-desc">Nightly or trigger-based automated configuration backups. Side-by-side colorized diff viewer alerting when an unauthorized VLAN or ACL change is pushed.</p>
+        </div>
+
+        <div class="spec-box">
+          <div class="spec-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/></svg>
+          </div>
+          <h4 class="spec-title">SFP digital optical monitoring (DOM)</h4>
+          <p class="spec-desc">Continuous monitoring of laser bias current, transmit power, and receive light (dBm). Forecasts dirty fiber patches and failing optic transceivers weeks before link death.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="netnexx-cta-section">
+    <div class="container">
+      <h2 style="font-size:clamp(2rem, 3.5vw, 2.75rem); font-weight:800; color:#fff; margin-bottom:16px;">
+        Take total command of your enterprise network
+      </h2>
+      <p style="font-size:18px; color:#94a3b8; max-width:650px; margin:0 auto 32px; line-height:1.65;">
+        Schedule a dedicated NetNexx technical demonstration tailored to your exact hardware topology and throughput volume.
+      </p>
+      <a href="#book-a-demo" class="btn-cobalt" data-demo="NetNexx" style="height:48px; padding:0 32px; font-size:15px;">
+        <span>Book a guided NetNexx walkthrough</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Enterprise Dark Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="brand-link" aria-label="SellNexx Home">
+          <img src="assets/sellnexx_logo_white.svg" alt="SellNexx Logo" class="brand-svg" width="156" height="26">
+        </a>
+        <p class="footer-brand-desc">
+          Intelligent carrier-grade network management and multi-vendor NOC telemetry for mission-critical enterprise infrastructure.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-heading">Platform Suite</div>
+        <ul class="footer-links">
+          <li><a href="netnexx.html" class="footer-link">NetNexx (Network NOC)</a></li>
+          <li><a href="guardnexx.html" class="footer-link">GuardNexx (Cyber Defense)</a></li>
+          <li><a href="#book-a-demo" class="footer-link" data-demo="HrNexx">HrNexx (HR &amp; Payroll)</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Enterprise</div>
+        <ul class="footer-links">
+          <li><a href="#vendors" class="footer-link">Multi-Vendor Matrix</a></li>
+          <li><a href="#specs" class="footer-link">Technical Specs</a></li>
+          <li><a href="index.html#bento" class="footer-link">Sovereign Architecture</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Connect</div>
+        <ul class="footer-links">
+          <li><a href="#book-a-demo" class="footer-link" data-demo="NetNexx">Schedule Live Demo</a></li>
+          <li><a href="https://www.linkedin.com/company/sellnexx" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+          <li><a href="https://twitter.com/sellnexx" target="_blank" rel="noopener noreferrer" class="footer-link">X / Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 NetNexx by SellNexx Enterprise Systems. All rights reserved.</div>
+      <div style="display:flex; gap:20px;">
+        <span>Carrier-Grade NOC</span>
+        <span>•</span>
+        <span>Multi-Vendor SNMP/gNMI</span>
+        <span>•</span>
+        <span>99.99% Availability</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightboxImg" src="" alt="Full Resolution Preview" class="lightbox-img">
+</div>
+
+<!-- Preserved Demo Modal -->
+<div class="demo-modal-backdrop" id="demoModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+  <div class="demo-modal-container">
+    <button class="demo-modal-close" id="demoModalClose" aria-label="Close dialog">&times;</button>
+    
+    <div id="demoModalFormView">
+      <div class="demo-modal-header">
+        <div class="demo-modal-badge"><span class="demo-badge-dot"></span> Live Product Walkthrough</div>
+        <h2 id="modalTitle">Schedule a NetNexx Demo</h2>
+        <p>See live multi-vendor network discovery and NOC alerting in action.</p>
+      </div>
+
+      <form id="demoModalForm" class="demo-modal-form" novalidate>
+        <div class="demo-form-group">
+          <label for="demoFullName">Full Name <span class="req">*</span></label>
+          <input type="text" id="demoFullName" name="fullName" placeholder="Sarah Jenkins" required autocomplete="name" />
+        </div>
+
+        <div class="demo-form-row">
+          <div class="demo-form-group">
+            <label for="demoWorkEmail">Work Email <span class="req">*</span></label>
+            <input type="email" id="demoWorkEmail" name="workEmail" placeholder="sarah@company.com" required autocomplete="email" />
+          </div>
+          <div class="demo-form-group">
+            <label for="demoCompanyName">Company Name <span class="req">*</span></label>
+            <input type="text" id="demoCompanyName" name="companyName" placeholder="Acme Enterprise" required autocomplete="organization" />
+          </div>
+        </div>
+
+        <div class="demo-form-group">
+          <label>Product Interest <span class="req">*</span></label>
+          <div class="demo-pills" role="radiogroup" aria-label="Product Interest">
+            <label class="demo-pill-label">
+              <input type="radio" name="productInterest" value="NetNexx" checked />
+              <span class="demo-pill">NetNexx</span>
+            </label>
+            <label class="demo-pill-label">
+              <input type="radio" name="productInterest" value="GuardNexx" />
+              <span class="demo-pill">GuardNexx</span>
+            </label>
+            <label class="demo-pill-label">
+              <input type="radio" name="productInterest" value="Both" />
+              <span class="demo-pill">Both Platforms</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="demo-form-group">
+          <label for="demoNotes">Network Size / Hardware Vendors <span class="opt">(Optional)</span></label>
+          <textarea id="demoNotes" name="notes" rows="2" placeholder="e.g. 50 Cisco switches, 4 Fortinet firewalls, 10Gbps uplinks..."></textarea>
+        </div>
+
+        <div id="demoFormError" class="demo-form-error" style="display:none;"></div>
+
+        <button type="submit" id="demoSubmitBtn" class="demo-submit-btn">
+          <span class="btn-text">Request Demo</span>
+          <span class="btn-spinner" style="display:none;"></span>
+        </button>
+      </form>
+    </div>
+
+    <div id="demoModalSuccessView" class="demo-success-view" style="display:none;">
+      <div class="demo-success-icon">✓</div>
+      <h3>Thank you! Your demo request has been received.</h3>
+      <p>A NetNexx systems architect will contact you shortly.</p>
+      <button type="button" class="demo-success-btn" id="demoSuccessCloseBtn">Done</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Gallery Tab Switcher
+function switchGalleryTab(index, btn) {
+  document.querySelectorAll('.gallery-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-panel').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('gallery-panel-' + index);
+  if (target) target.classList.add('active');
+}
+
+// Lightbox
+function openLightbox(src) {
+  const modal = document.getElementById('lightboxModal');
+  const img = document.getElementById('lightboxImg');
+  if (modal && img) {
+    img.src = src;
+    modal.classList.add('open');
+  }
+}
+
+function closeLightbox(e) {
+  const modal = document.getElementById('lightboxModal');
+  if (modal) {
+    if (!e || e.target === modal || e.target.classList.contains('lightbox-close')) {
+      modal.classList.remove('open');
+    }
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+// Demo Modal Controller
+(function() {
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQGlkyK1qmLebbLvWFc_E-7ZtjAikNdV0K1W3uUM_t_eG18xkCnMaHZN84NiRYcc3w/exec';
+
+  const backdrop = document.getElementById('demoModalBackdrop');
+  if (!backdrop) return;
+
+  const closeBtn = document.getElementById('demoModalClose');
+  const form = document.getElementById('demoModalForm');
+  const formView = document.getElementById('demoModalFormView');
+  const successView = document.getElementById('demoModalSuccessView');
+  const successCloseBtn = document.getElementById('demoSuccessCloseBtn');
+  const submitBtn = document.getElementById('demoSubmitBtn');
+  const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+  const btnSpinner = submitBtn ? submitBtn.querySelector('.btn-spinner') : null;
+  const errorBox = document.getElementById('demoFormError');
+
+  function openModal(defaultProduct) {
+    if (formView) formView.style.display = 'block';
+    if (successView) successView.style.display = 'none';
+    if (errorBox) {
+      errorBox.textContent = '';
+      errorBox.style.display = 'none';
+    }
+    if (submitBtn) submitBtn.disabled = false;
+    if (btnText) btnText.textContent = 'Request Demo';
+    if (btnSpinner) btnSpinner.style.display = 'none';
+    backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('a, button').forEach(function(el) {
+    if (el.closest('#demoModalBackdrop') || el.closest('#lightboxModal')) return;
+    const text = (el.textContent || '').trim().toLowerCase();
+    const href = el.getAttribute('href') || '';
+    if (
+      text.includes('schedule netnexx demo') ||
+      text.includes('schedule live noc demo') ||
+      text.includes('request live poc') ||
+      text.includes('book a guided') ||
+      href === '#book-a-demo'
+    ) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal('NetNexx');
+      });
+      el.setAttribute('href', '#book-a-demo');
+    }
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (successCloseBtn) successCloseBtn.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', function(e) { if (e.target === backdrop) closeModal(); });
+
+  let isSubmitting = false;
+
+  async function handleDemoSubmit(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    if (isSubmitting) return;
+
+    const fullNameInput = document.getElementById('demoFullName');
+    const workEmailInput = document.getElementById('demoWorkEmail');
+    const companyNameInput = document.getElementById('demoCompanyName');
+    const notesInput = document.getElementById('demoNotes');
+
+    const fullName = fullNameInput ? fullNameInput.value.trim() : '';
+    const workEmail = workEmailInput ? workEmailInput.value.trim() : '';
+    const companyName = companyNameInput ? companyNameInput.value.trim() : '';
+    const notes = notesInput ? notesInput.value.trim() : '';
+
+    if (!fullName || !workEmail || !companyName) {
+      if (errorBox) {
+        errorBox.textContent = 'Please fill in all required fields (Name, Work Email, Company).';
+        errorBox.style.display = 'block';
+      }
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(workEmail)) {
+      if (errorBox) {
+        errorBox.textContent = 'Please enter a valid work email address.';
+        errorBox.style.display = 'block';
+      }
+      return;
+    }
+
+    isSubmitting = true;
+    if (submitBtn) submitBtn.disabled = true;
+    if (btnText) btnText.textContent = 'Submitting...';
+    if (btnSpinner) btnSpinner.style.display = 'inline-block';
+
+    const payload = {
+      fullName: fullName,
+      workEmail: workEmail,
+      companyName: companyName,
+      product: 'NetNexx',
+      notes: notes
+    };
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      });
+      if (form) form.reset();
+      if (formView) formView.style.display = 'none';
+      if (successView) successView.style.display = 'block';
+    } catch (err) {
+      console.error('Submission error:', err);
+      if (form) form.reset();
+      if (formView) formView.style.display = 'none';
+      if (successView) successView.style.display = 'block';
+    } finally {
+      isSubmitting = false;
+      if (submitBtn) submitBtn.disabled = false;
+      if (btnText) btnText.textContent = 'Request Demo';
+      if (btnSpinner) btnSpinner.style.display = 'none';
+    }
+  }
+
+  if (form) form.addEventListener('submit', handleDemoSubmit);
+  if (submitBtn) submitBtn.addEventListener('click', handleDemoSubmit);
+})();
+</script>
+</body>
+</html>
