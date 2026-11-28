@@ -1,0 +1,29 @@
+# Operating System Metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Developer & Editor Folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Confidential / Source Internal Documents
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.csv
+*.txt
+!robots.txt
+
+# Temporary / Scratch / Backup Files
+*.bak
+*.tmp
+*.log
+*.swp
+*~
+.env
+node_modules/
